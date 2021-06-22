@@ -1,0 +1,294 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+.center{
+	max-width: 1100px;
+	padding: 0 2%;
+	margin: 0 auto;
+}
+
+.clear{
+	clear: both;
+}
+
+
+@font-face{
+	font-family: "Minha Fonte";
+	src: url(../fonts/FACEBOLF.otf)
+}
+
+header{
+	background:#3b5998;
+	padding: 8px 0;
+}
+
+.logo{
+	width: 50%;
+	float: left;
+	color: white;
+}
+
+.logo h2{
+	font-size: 35px;
+	font-weight: normal;
+	font-family: "Minha Fonte";
+	margin-top:4px;
+	margin-right: 
+}
+
+form.form-login {
+	float: right;
+	margin-right: 5px;
+
+
+}
+.form-element p{
+	color: white;
+	font-size: 14px;
+	font-family: "Open Sans"
+}
+
+.form-login .form-element{
+	display: inline-block;
+}
+
+.form-element input[type=email],
+.form-element input[type=password]{
+	margin-top: 4px;
+	padding: 3px;
+	outline: 0;
+	border: 0;
+	display: inline-block;
+}
+
+.form-element input[type=submit]{
+	cursor: pointer;
+	border:2px solid #363EDB;
+	background:#1A2AC3;
+	color: white;
+	font-weight: bold;
+	padding:3px 5px;
+	display: inline-block;
+}
+
+.form-element input[type=submit]:hover{
+	background:#363EDB;
+}
+
+section.main{
+	background:linear-gradient(white, #D3D8E8);
+	padding: 40px 0;
+	position: relative;
+	
+}
+
+.img-pessoas{
+	float: left;
+	width: 50%;
+
+	
+}
+
+.img-pessoas h2{
+
+	color: #3b5998;
+	font-family: Minha Fonte;
+	font-weight: normal;
+	width: 100%;	
+
+}
+
+.img-pessoas img{
+	max-width: 100%;
+	margin-right: 20%;
+	margin-top: 10px;
+}
+
+.abrir-conta{
+
+	width: 30%;
+	float: left;
+	margin-left: 7%;
+
+
+}
+
+.abrir-conta h2{
+	color:black;
+	font-size: 30px;
+	font-family: Minha Fonte;
+	font-weight:normal;
+	margin-left: 1%;
+	}
+.abrir-conta h3{
+
+	font-size: 15px;
+	margin-top: 8px;
+	font-family: Minha Fonte;
+	font-weight:normal;
+	color:rgb(30,30,30);
+	margin-left: 1%;
+}
+
+form.criar-conta{
+	margin-top: 10px;
+	margin-right:50px;
+
+}
+
+.w50{
+	padding: 3px 5px;
+	width: 50%;
+	float: left;
+}
+
+.w100{
+	padding: 3px 5px;
+	width: 100%;
+
+	float: left;
+}
+
+form.criar-conta input{
+	width: 100%;
+	padding: 4px 0;
+}
+
+.criar-conta input[type=email],
+.criar-conta input[type=password],
+.criar-conta input[type=text]{
+	border: 1px solid #a5dcff;
+	border-radius: 3px;
+	padding-left: 3px;
+	outline: 0;
+	height: 33px;
+
+}
+
+form.criar-conta input[type=submit]{
+	height: 38px;
+	color: white;
+	background:linear-gradient(#67ae55, #578843);
+	cursor: pointer;
+	border: 0;
+	border-radius: 4px;
+	max-width: 200px;
+	margin-top: 10px;
+	font-weight: bold;
+	font-size: 17px;
+
+}
+
+form .w100 h2{
+	font-size: 18px;
+	font-weight: normal;
+	color: #1d2129;
+	font-family:tahoma;
+	text-align: left;
+	border:0;
+	margin-top:10px;
+}	
+
+form select.nascimento{
+	float: left;
+	margin-top:5px;
+}
+
+.w100 .nasc{
+	text-align: left;
+	margin-left: 0;
+	
+}
+.w100 input[type=date],
+.w100 input[type=date]:focus{
+	border: 1px solid #a5dcff;
+	border-radius: 3px;
+	width: 50%;
+	margin-top: 5px;
+	outline: none;
+
+}
+
+input[type=radio]{
+	float: right;
+	width: 20%;
+	
+}
+
+.sexo{
+	
+	float: left;
+	width: 50%;
+	display: inline-block;
+}
+
+.sexo h2{
+	display: inline-block;
+
+}
+
+.sexo input[type=radio]{
+	width: 50% !important;
+	display: inline-block;
+	margin-top: 15px;
+}
+
+@media screen and (max-width:768px){
+	.logo{
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	form.form-login{
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin-top: 10px;
+		display: inline-block;
+	}
+	.form-element p{
+		color: white;
+		font-size: 14px;
+		font-family: "Open Sans"
+	}
+	
+	.form-login .form-element{
+		display: block;
+		margin: 10px 0;
+	}
+	
+	.form-element input[type=email],
+	.form-element input[type=password]{
+		margin-top: 4px;
+		padding-left: 3px;
+		outline: 0;
+		border: 0;
+		height: 22px;	
+		width: 100%;
+		max-width: 320px;
+	}
+	
+	
+.form-element input[type=submit]{
+	width: 140px;
+}
+
+.img-pessoas{
+	display: none;
+}
+
+.abrir-conta{
+	width: 100%;
+	max-width: 600px;
+	
+}
+
+
+	
+
+}
