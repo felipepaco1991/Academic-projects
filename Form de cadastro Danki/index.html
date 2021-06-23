@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <h3>Entrar em contato</h3>
+        <input id="email" type="text" name="email" placeholder="Seu e-mail..."/>
+        <input id="pw" type="password" name="senha" placeholder="Sua senha..."/>
+        <input id="submit" type="submit" name="acao" value="Enviar" />
+    </form>
+
+
+    <script>
+       
+       
+        function collorBorder (){
+        let email = document.getElementById('email')
+        let password = document.getElementById('pw')
+      
+         email.addEventListener('focus', function(){
+            this.style.borderColor = 'red'
+        })
+        
+         email.addEventListener('blur', function(){
+            this.style.borderColor = '#5f7c8a'
+        })
+        password.addEventListener('focus', function(){
+            this.style.borderColor = 'red'
+        })
+        
+         password.addEventListener('blur', function(){
+            this.style.borderColor = '#5f7c8a'
+        })
+
+       
+    }
+    collorBorder()
+  
+    </script>
+</body>
+</html>
