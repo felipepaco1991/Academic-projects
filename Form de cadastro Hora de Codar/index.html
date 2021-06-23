@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cadastro de usuário</title>
+</head>
+<body>
+    <div id="container">
+        <h1>Cadastre-se para acessar o sistema</h1>
+
+        <form id="register-form">
+            <div class="full-box">
+                <label for="email">E-mail</label>
+                <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="3">
+            </div><!--full-box-->
+
+            <div class="half-box spacing" >
+                <label for="name">Nome </label>
+                <input type="text" name="name" id="name" placeholder="Digite o seu nome">
+            </div><!--half-box-->
+
+            <div class="half-box">
+                <label for="lastname">Sobrenome</label>
+                <input type="text" name="lastname" id="lastname" placeholder="Digite o seu sobrenome">
+            </div><!--half-box-->
+
+            <div class="half-box spacing">
+                <label for="password">Senha</label>
+                <input type="password" name="password" id="password" placeholder="Digite a sua senha">
+            </div><!--half-box-->
+
+            <div class="half-box">
+                <label for="passconfirmation">Confirmação</label>
+                <input type="password" name="passconfirmation" id="passconfirmation" placeholder="Confirme sua senha">
+            </div><!--half-box-->
+
+            <div class="full-box">
+                
+                <input type="checkbox" name="agreement" id="agreement" placeholder="Digite seu e-mail">
+                <label id="agreement-label" for="email">Eu li e aceito os <a href="#">termos de uso</a>
+                </label>
+
+                <div class="full-box">
+                <input type="submit" id="btn-submit" value="Registrar">
+                </div><!--full-box-->
+            </div><!--full-box-->
+        </form><!--register-form-->
+    </div><!--container-->
+
+    <p class="error-validation template"></p>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
