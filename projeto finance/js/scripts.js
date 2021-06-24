@@ -48,6 +48,7 @@ const Transaction = {
     all: transactions,
     add(transaction){
         Transaction.all.push(transaction)
+        App.reload()
     },
     incomes() {
         let income = 0;
@@ -78,6 +79,7 @@ const Transaction = {
 const DOM = {
 
     transactionsContainer: document.querySelector('#data-table tbody'),
+
     addTransaction(transaction, index){
         const tr = document.createElement('tr')
         tr.innerHTML = DOM.innetHTMLTransaction(transaction)
@@ -103,11 +105,14 @@ const DOM = {
     },
     updateBalance(){
         document.getElementById('incomeDisplay')
-        .innerHTML = Util.formatCurrency(Transaction.incomes())
+        .innerHTML = Utils.formatCurrency(Transaction.incomes())
         document.getElementById('expenseDisplay')
-        .innerHTML = Util.formatCurrency(Transaction.expeses())
+        .innerHTML = Utils.formatCurrency(Transaction.expeses())
         document.getElementById('totalDisplay')
-        .innerHTML = Util.formatCurrency(Transaction.total())
+        .innerHTML = Utils.formatCurrency(Transaction.total())
+    },
+    clearTransactions(){
+        DOM.transactionsContainer.innerHTML=""
     }
 }
 
@@ -125,13 +130,29 @@ const Utils = {
     }
 }
 
-transactions.forEach(function(transaction){
-    DOM.addTransaction(transaction)
-})
 
-DOM.updateBalance()
+const App = {
+    init (){
+        Transaction.all.forEach(function(transaction){
+            DOM.addTransaction(transaction)
+        })
+        
+        DOM.updateBalance()
 
-Transaction.add(){
-    id:39,
-    description: ''
+        
+    },
+    reload(){
+        DOM.clearTransactions()
+        App.init()
+    }
 }
+
+App.init()
+
+        
+Transaction.add({
+    id:39,
+    description: 'Alo',
+    amount: 200,
+    date: '23/01/2021'
+})
