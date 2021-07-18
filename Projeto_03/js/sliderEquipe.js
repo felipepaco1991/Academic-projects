@@ -1,5 +1,5 @@
 $(function(){
-    var delay = 3000;
+    var delay = 7000;
     var curIndex = 0;
     var amt;
     initSlider();
