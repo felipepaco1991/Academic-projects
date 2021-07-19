@@ -27,18 +27,18 @@ $(function(){
     function autoPlay(){
         setInterval(function (){
             curIndex++;
-            if(curIndex == amt){
+            if(curIndex == amt)
                 curIndex = 0;
-            }
             goToSlider(curIndex);
             
-            
-        },delay);
+        },delay)
+    
     }
 
     function goToSlider(curIndex){
         var offSetX = $('.sobre-autor').eq(curIndex).offset().left - $('.scroll-wraper').offset().left;
-
+        $('.slider-bullets span').css('background-color','rgb(200,200,200)');
+        $('.slider-bullets span').eq(curIndex).css('background-color', 'rgb(170,170,170)');
         $('.scrollEquipe').stop().animate({'scrollLeft': offSetX+'px'});
     }
 
