@@ -177,14 +177,11 @@ section.sessao1 .container{
 }
 
 .texto-sessao1 h2{
-	font-size: 26px;
+	font-size:1.8rem;
 	font-weight: 300;
 }
 
-.texto-sessao1 p{
-	margin-top:20px;
-	font-size: 15px;
-}
+
 
 .texto-sessao1 ul{
 	font-size: 15px;
@@ -195,7 +192,9 @@ section.sessao1 .container{
 .texto-sessao1 ul li{
 	width: 100%;
 	margin-top:8px;
+    font-size: 1.2rem;
 }
+
 
 .btn1-texto{
 	background-color: #FF703D;
@@ -220,7 +219,7 @@ section.sessao1 .container{
 	float: left;
 	width: 50%;
 	position: relative;
-	top:-45%;
+	top:-28%;
 	height: 100%;
 	background-image: url('../images/system.png');
 	background-repeat: no-repeat;
@@ -330,12 +329,12 @@ section.sessao1 .container{
 .titulo-autor h2{
 	color: var(--Myblack);
 	font-weight: 400;
-	font-size: 2rem;
+	font-size: 1.3rem;
 	padding-right: 20px;
 }
 
 .titulo-autor p{
-	font-size: 1.2rem;
+	font-size: 0.7rem;
 	color: var(--Myblack);
 	font-style: italic;
 	font-weight: 300;
@@ -377,7 +376,7 @@ section.sessao1 .container{
 
 .texto-autor p{
 	color: var(--Myblack);
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 35px;
 }
 
@@ -437,6 +436,7 @@ section.sessao4{
 	padding-left: 8px;
 	line-height: 58px;
 	border:1px solid rgb(200,200,200);
+    border-radius:12px;
 
 }
 
@@ -447,6 +447,7 @@ section.sessao4{
 	padding:15px;
 	border:1px solid rgb(200,200,200);
 	height: 160px;
+    border-radius:12px;
 }
 
 .form form input[type=submit]{
@@ -503,7 +504,8 @@ section.sessao4{
 	width: 100%;
 	height: 100%;
 	background: white;
-	border:5px solid rgb(200,200,200);
+	border:5px solid line;;
+    border-radius: 20px;
 }
 .mapouter{
     width: 100%;
@@ -520,19 +522,16 @@ section.sessao4{
 }
 
 footer{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     padding:40px 2%;
     background-color: #343333;
     color: white;
     font-size: 14px;
 }
 
-footer p:nth-of-type(1){
-    float:left;
-}
-
-footer p:nth-of-type(2){
-    float:right;
-}
 
 
 @media screen and (max-width:830px){
@@ -628,9 +627,11 @@ footer p:nth-of-type(2){
       
     }
 
-section .chamada{
-    margin-top: 150px;
-} 
+
+
+header .chamada p{
+    text-align: justify;
+}
 
 
 
@@ -652,6 +653,11 @@ section.sessao1{
         text-align: center;
     }
 
+    section .texto-sessao1 h2{
+        font-size:1.4rem;
+        font-weight:400;
+    }
+
     section .texto-sessao1 ul{
         display:inline-block;
         margin-top: 20px;
@@ -659,6 +665,7 @@ section.sessao1{
     section .texto-sessao1 ul li{
         float: none;
         text-align: left;
+        font-size:0.9rem
     }
 
     section .btn1-texto{
@@ -723,6 +730,10 @@ section.sessao1{
         height: 100%;
         padding-top:0;
     }
+
+    footer p{
+        margin-top:5px
+    }
     
     }
     
@@ -751,14 +762,11 @@ section.sessao1{
             font-size: 14px;
             text-align: center;
         }
-        
-        footer p:nth-of-type(1){
-            float:none;
-            
+
+        footer p {
+            font-size:0.7rem
         }
         
-        footer p:nth-of-type(2){
-            float:none;
-            margin-top:8px;
+
         }
-    }
+    
